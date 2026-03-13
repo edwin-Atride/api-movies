@@ -40,16 +40,10 @@ require_once("get-proxy.php");// au lycée pour faire des requêtes https vous a
      
     }
 
-;
-    
-
-      function view(){
+      function infoFilm($movieId){
         $key = "9e43f45f94705cc8e1d5a0400d19a7b7";
-        $movieId = 76600; // Ex: ID du film "Avatar"
         $url = "https://api.themoviedb.org/3/movie/$movieId?api_key=$key&language=fr-FR";
         $response = getProxy($url);
-        //$response = file_get_contents("https://api.themoviedb.org/3/movie/popular?api_key=$key&language=fr-FR");
-       
         $result = json_decode($response, true);
         return $result['results'];
       }
