@@ -24,7 +24,7 @@ if ( isset($_GET['id']) AND !empty($_GET['id'])){
               <p class=" lh-sm">
                 <strong><?php echo $movie['title']; ?></strong>
               </p>
-             <a href="view.php"><button type="submit" class="btn btn-primary mt-auto">View</button></a>
+             <a href="view.php?id=<?= $movie['id']; ?>"><button type="submit" class="btn btn-primary mt-auto">View</button></a>
             </div>
           </div>
         </div>

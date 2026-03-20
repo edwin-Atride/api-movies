@@ -45,7 +45,8 @@ require_once("get-proxy.php");// au lycée pour faire des requêtes https vous a
         $url = "https://api.themoviedb.org/3/movie/$movieId?api_key=$key&language=fr-FR";
         $response = getProxy($url);
         $result = json_decode($response, true);
-        return $result['results'];
+        //print_r($result);
+        return $result;
       }
 ?>
 

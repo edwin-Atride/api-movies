@@ -43,7 +43,16 @@
                   Genre
                 </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="genreMovies.php?id=878">Science Fiction</a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=28">Action </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=12">Adventure </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=16">Animation </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=878">Science Fition</a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=35">Comedy </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=80">Crime </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=99">Documentary </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=18">Drama </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=10751">Family </a></li>
+                  <li><a class="dropdown-item" href="genreMovies.php?id=14">Fantasy </a></li>
               </ul>
             </li>
           </ul>
