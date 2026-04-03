@@ -6,6 +6,9 @@ if (isset($_GET['id']) AND !empty($_GET['id'])) {
     $id = htmlspecialchars($_GET['id']);
     $infoFilm = infoFilm($id);
 }
+
+$acteurfilm = acteurinfilm($id);
+
 ?>
 
 <style>
@@ -117,6 +120,28 @@ if (isset($_GET['id']) AND !empty($_GET['id'])) {
         </div>
 
     </div>
+</div>
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+       <h4>ACTEURS</h4>
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+     <?php foreach($acteurfilm as $acteur) : ?>  
+        <div class="d-flex align-items-stretchl">
+          <div class="card shadow-sm ">
+            <img src="<?php echo 'https://image.tmdb.org/t/p/w780/'.$acteur['profile_path']; ?>" >
+            <div class="card-body lh-sm d-flex flex-column">
+              <p class=" lh-sm">
+                <strong><?php echo $acteur['name']; ?></strong>
+              </p>
+             <a href="viewacteur.php?id=<?= $acteur['id']; ?>"><button type="submit" class="btn btn-primary mt-auto">fiche acteur</button></a>
+             
+            </div>
+          </div>
+        </div>
+     <?php endforeach; ?>
+    </div>
+  </div>
 </div>
 
 <?php require("footer.php"); ?>
